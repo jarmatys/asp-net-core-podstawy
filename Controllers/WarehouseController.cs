@@ -39,7 +39,6 @@ namespace Test_web_app.Controllers
 
             var id = _warehouseService.Save(body);
 
-            ViewData["ProductId"] = id;
             TempData["ProductId"] = id;
 
             return RedirectToAction("Add");
