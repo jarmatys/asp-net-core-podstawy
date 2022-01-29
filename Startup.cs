@@ -31,6 +31,7 @@ namespace Test_web_app
             services.AddControllersWithViews();
 
             services.AddScoped<IWarehouseService, WarehouseService>();
+            services.AddScoped<IApiService, ApiService>();
 
             services.AddDbContext<DbTestContext>(builder =>
             {
